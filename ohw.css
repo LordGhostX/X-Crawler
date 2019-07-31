@@ -1,0 +1,29 @@
+
+    #box1{
+        width: 100%;
+        min-width: 1000px;
+        height: auto;
+        background-color: aquamarine;
+        padding: 1px;
+        margin: 0;
+    }
+    #header{
+         position: relative;
+         top: 80px;
+         left: 20%;
+         right: -60%;
+         font-size: 500%;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #search_box{
+        position: relative;
+        top: 105%;
+        left: 15%;
+        right:-60%;
+        width: 65%;
+        height: 80%;
+        border-radius: 10%;
+        color: black;
+
+
+    }
