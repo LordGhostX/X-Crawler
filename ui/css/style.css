@@ -1231,8 +1231,11 @@ blockquote {
   padding: 0;
 }
 .team_names{
-  border-bottom: #212121;
+  
   border-style: solid 2px;
+}
+.mee{
+  border-bottom: #212121 2px dotted ;
 }
 .team_image{
   border: #965820;
