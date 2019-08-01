@@ -1222,6 +1222,20 @@ blockquote {
     color: #000; }
 
 /*----Favour's Edit------*/
+.form{
+  width: 700px;
+  border-radius: 20px;
+  height: 50px;
+  box-shadow: 2px 2px 2px 2px #6c757d;
+  border: none;
+  display:inline-block;
+
+}
+::placeholder{
+  color: #965820;
+  padding-left: 30px;
+}
+
 .team_names{
   padding-top: 10px;
   padding-left: 10px;
