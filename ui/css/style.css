@@ -128,7 +128,7 @@ header {
       font-size: 40px; } }
 
 .top-bar {
-  background: #6610f2;
+  background: #965820;
   padding: 10px 0; }
   .top-bar .social a, .top-bar .search-icon a {
     color: #fff;
@@ -1145,7 +1145,7 @@ textarea.form-control {
 .search-top input {
   color: #fff;
   background: #212121;
-  background: #510bc4;
+  background: #af850a;
   width: inherit;
   min-width: 300px;
   border: none;
@@ -1220,6 +1220,36 @@ blockquote {
     font-size: 18px;
     font-style: italic;
     color: #000; }
+
+/*----Favour's Edit------*/
+.team_names{
+  padding-top: 10px;
+  padding-left: 10px;
+
+}
+.team_names p{
+  padding: 0;
+}
+.team_names{
+  border-bottom: #212121;
+  border-style: solid 2px;
+}
+.team_image{
+  border: #965820;
+  border-radius: 300px;
+  border-style: dotted ;
+  
+}
+.team_info{
+  text-align: center;
+}
+.team_info img{
+  height: 270px;
+  width: 270px;
+  border: #000;
+  border-radius: 300px;
+
+}
 
 .list-unstyled.check li {
   position: relative;
