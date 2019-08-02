@@ -7,6 +7,7 @@ from .pagination import PostPageNumberPagination
 
 
 class SearchView(generics.ListAPIView):
+    template_name = "index.html"
     with open('data.txt', "r") as text_file:
         text = eval(text_file.read())
         for research in text:
