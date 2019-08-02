@@ -7,20 +7,21 @@ from .pagination import PostPageNumberPagination
 
 
 class SearchView(generics.ListAPIView):
-    # crawler = [
-    #     "Prof. Waled", "Plans on how next to destroy engineering students lives",
-    #     "summary talk slowly", "www.killingdem.com"
-    # ]
-    # new_pub = Publication()
-    # new_pub.author = crawler[0]
-    # new_pub.pub_title = crawler[1]
-    # new_pub.pub_summary = crawler[2]
-    # new_pub.pub_url = crawler[3]
-    #
-    # for pub in Publication.objects.all():
-    #     if new_pub == pub:
-    #         new_pub.delete()
-    # new_pub.save()
+    with open('data.txt', "r") as text_file:
+        text = eval(text_file.read())
+        for research in text:
+
+            new_pub = Publication()
+            new_pub.author = research['author']
+            new_pub.pub_url = research['research_link']
+            new_pub.pub_title = research['research_title']
+            new_pub.pub_summary = research['abstract']
+
+            for pub in Publication.objects.all():
+                if new_pub == pub:
+                    new_pub.delete()
+            new_pub.save()
+
     context_object_name = "all_publications"
     queryset = Publication.objects.all()
     serializer_class = PublicationSerializer
