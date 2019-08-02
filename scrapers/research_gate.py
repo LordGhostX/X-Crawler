@@ -31,5 +31,4 @@ def research_gate():
             except:
                 abstract = ""
             research.append({"author": author, "research_link": research_link, "research_title": research_title, "abstract": abstract})
-        print(research)
     return research
