@@ -299,7 +299,7 @@ header {
   color: #cccccc; }
 
 .episodes .episode-number {
-  border: 2px solid #921cd5
+  border: 2px solid #921cd5;
   text-align: center;
   display: inline-block;
   width: 80px;
@@ -307,7 +307,7 @@ header {
   text-transform: uppercase;
   line-height: 74px;
   border-radius: 50%;
-  background: #921cd5
+  background: #921cd5;
   color: #fff;
   font-size: 30px; }
 
@@ -483,7 +483,7 @@ header {
   position: relative;
   padding: 20px;
   padding-bottom: none;
-  box-shadow: 3px 3px 3px 3px whitesmoke;
+  box-shadow: 3px 3px 3px 3px grey;
 }
   .blog-entries .blog-entry:hover, .blog-entries .blog-entry:focus {
     opacity: .7;
@@ -1177,7 +1177,7 @@ textarea.form-control {
       width: 150px;
       min-width: 150px; } }
   .search-top input:active, .search-top input:focus {
-    background: #921cd5
+    background: #921cd5;
     outline: none; }
 
 .post-entry-sidebar .post-meta {
@@ -1185,7 +1185,7 @@ textarea.form-control {
   color: #b3b3b3; }
 
 .post-entry-sidebar ul {
-  padding: ;
+  padding: 20px;
   margin: 0; }
   .post-entry-sidebar ul li {
     list-style: none;
