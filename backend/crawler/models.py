@@ -6,13 +6,14 @@ class Publication(models.Model):
     pub_title = models.CharField(max_length=200)
     pub_summary = models.CharField(max_length=200)
     pub_url = models.CharField(max_length=200)
+    pub_picture = models.ImageField(blank=True)
 
     def __str__(self):
         return self.pub_title + self.author
 
 
 class Lecturer(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.ForeignKey(Publication, on_delete=models.CASCADE)
     email = models.EmailField()
     date_of_birth = models.CharField(max_length=200)
     description = models.CharField(max_length=200)

@@ -11,6 +11,7 @@ class PublicationSerializer(serializers.ModelSerializer):
                     'pub_title',
                     'pub_url',
                     'pub_summary',
+                    'pub_picture',
                   ]
 
 
