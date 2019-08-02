@@ -316,7 +316,11 @@ header {
   height: 50vh; }
 
 .site-section {
-  padding: 7em 0; }
+  padding: 7em 0;
+  padding-top: 10px; }
+  .site-section .mb-4{
+    padding-top: 15px;
+  }
   .site-section.py-md {
     padding: 3em 0; }
   .site-section.py-sm {
@@ -478,7 +482,9 @@ header {
   margin-bottom: 30px;
   position: relative;
   padding: 20px;
-  padding-bottom: none;}
+  padding-bottom: none;
+  box-shadow: 3px 3px 3px 3px whitesmoke;
+}
   .blog-entries .blog-entry:hover, .blog-entries .blog-entry:focus {
     opacity: .7;
     top: -1px;
