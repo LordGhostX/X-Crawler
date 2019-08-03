@@ -12,8 +12,9 @@ This is simply a blog that is automatically updated with Research Publications f
 ## Current Progress
 * [x] Designing project logo
 * [x] Basic Site UI
+* [x] Scrape Research Paper sites to get data on our targets
+* [x] Handling Server and Database
+* [x] Merging Frontend and Backend
 
 ## TODO
-* [ ] Scrape Research Paper sites to get data on our targets
-* [ ] Handling Server and Database
 * [ ] Writing Pitch Deck
