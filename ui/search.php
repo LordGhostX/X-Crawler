@@ -28,6 +28,9 @@
                 </div>';
 		}
 	}
+	if ($search_data == ""){
+		$search_data = "<h1>No results found for your query</h1>";
+	}
 ?>
 
 <!doctype html>
