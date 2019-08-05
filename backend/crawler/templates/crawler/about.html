@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About{% endblock title %}
+
+
+{% block nav_menu %}
+<li class="nav-item">
+  <a class="nav-link" href="{% url 'crawler:home' %}">Home</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link active" href="{% url 'crawler:about' %}">About</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="{% url 'crawler:contact' %}">Contact</a>
+</li>
+{% endblock nav_menu %}
+
+
+{% block main_content %}
+
+<div class="row blog-entries">
+
+  <div class="col-md-12 col-lg-8 main-content">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="mb-4">About X-Crawler</h2>
+        <div>
+          <p> X-Crawler is a Publication Crawling project, used to search for research papers, publications written by
+            the
+            staff of
+            the University of Lagos. This project was part of the problems presented by the DSC (Developer Student
+            Club),
+            University
+            of Lagos at The Open Hack Week Hackathon. During the course of this project different technologies where
+            used
+            and
+            different Academic Websites
+            were scraped for the possibility of the Project. We have a bunch of people who worked on this project, and
+            without them this project would not
+            be possible.
+          </p>
+        </div>
+
+        <div class="team_info" style="padding-top: 20px;">
+          <h1>MEET OUR DEVELOPERS</h1>
+          <div class="team_lead">
+            <img src="{% static 'img/47832826.png' %}" alt="" class="team_image animated fadeInDown">
+            <h3 class="team_names"> SOLOMON ESENYI </h3>
+            <p style="font-weight: bold"> Team Lead</p>
+            <p class="mee">Solomon Esenyi is a python developer that was responsible for the building of the web
+              scrapers.<br>
+              <a href="https://www.twitter.com/LordGhostX" class="mee"> <i class="fab fa-twitter"
+                  aria-hidden="true"></i>
+              </a>
+              <a href="https://www.github.com/LordGhostX"> <i class="fab fa-github" aria-hidden="true"></i></a>
+            </p>
+            <img src="{% static 'img/my_dp_passport.jpg' %}" alt="" class="team_image animated rubberBand ">
+            <h3 class="team_names">OGUNBOWALE SOLOMON</h3>
+            <p style="font-weight: bold">Project Manager</p>
+            <P class="mee">Solomon is a Java developer and played the role
+              of the project manager for this project <br>
+              <a href="https://www.twitter.com/" class="mee"> <i class="fab fa-twitter" aria-hidden="true"></i> </a>
+              <a href="https://www.github.com/ayosol"> <i class="fab fa-github" aria-hidden="true"></i></a>
+            </P>
+
+            <img src="{% static 'img/Me.jpeg' %}" alt="Praise Anene" class="team_image animated jello">
+            <h3 class="team_names">ANENE PRAISE</h3>
+            <p style="font-weight: bold">Software Developer</p>
+            <p class="mee">Anene Praise is a python developer that was responsible for managing the
+              remote server of the X-Crawler project.<br>
+              <a href="https://www.twitter.com/PraiseTheDev"> <i class="fab fa-twitter" aria-hidden="true"></i> </a>
+              <a href="https://www.github.com/Praise25"> <i class="fab fa-github" aria-hidden="true"></i></a>
+            </p>
+            <img src="{% static 'img/favour.jpg' %}" alt="favour" class="team_image animated tada">
+            <h3 class="team_names">OYEWUMI FAVOUR</h3>
+            <P style="font-weight: bold">Front-End Web Developer and Data Science Enthusiast</P>
+            <p class="mee">Oyewumi Favour was responsible for the building of the User Interface for this
+              Web application. <br>
+              <a href="https://www.twitter.com/Black_mide"> <i class="fab fa-twitter" aria-hidden="true"></i> </a>
+              <a href="https://www.github.com/FavourOyewumi7"> <i class="fab fa-github" aria-hidden="true"></i></a>
+            </p>
+            <img src="{% static 'img/fado.jpg' %}" alt="Alameen" class="team_image animated flip">
+            <h3 class="team_names">FADIPE AL-AMEEN</h3>
+            <p style="font-weight: bold">BackEnd Developer, Product Designer</p>
+            <p class="mee">Alameen was responsible for majority of the backend operations, including integration
+              of the backend and UI, database design and management.<br>
+              <a href="https://www.twitter.com/fadhoo"> <i class="fab fa-twitter" aria-hidden="true"></i> </a>
+              <a href="https://www.github.com/fadhoo"> <i class="fab fa-github" aria-hidden="true"></i></a>
+            </p>
+            <img src="{% static 'img/mary.jpg' %}" alt="Mary" class="team_image animated bounceInLeft">
+            <h3 class="team_names">MBAOMA CHIOMA MARY</h3>
+            <p style="font-weight:bold;">Python, Data analyst, HTML, CSS, Programming tutor</p>
+            <p class="mee"> Mary is a python developer who was responsible for the design of our User Interface.<br>
+              <a href="https://www.twitter.com/mba_oma"> <i class="fab fa-twitter" aria-hidden="true"></i> </a>
+              <a href="https://www.github.com/Mbaoma"> <i class="fab fa-github" aria-hidden="true"></i></a>
+            </p>
+            <p>
+              <img src="{% static 'img/emyi.jpg' %}" alt="Emyi" class="team_image animated bounceInLeft">
+              <h3 class="team_names"> ENYIOMA OLUWAFEMI OSONDU</h3>
+              <p style="font-weight:bold;"> Python, Backend Developer (Django), JavaScript</p>
+              <p> Femi made our web scrapper for Oxford Library and contributed to the backend. <br>
+                <a href="https://www.twitter.com/oluwafenyi"> <i class="fab fa-twitter" aria-hidden="true"></i> </a>
+                <a href="https://www.github.com/oluwafenyi"> <i class="fab fa-github" aria-hidden="true"></i></a>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock main_content %}

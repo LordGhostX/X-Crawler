@@ -5,8 +5,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include(('crawler.urls', 'crawler'), namespace='crawler')),
+    path('', include('crawler.urls')),
+    path('admin/', admin.site.urls)
 ]
 urlpatterns = format_suffix_patterns(urlpatterns)
 
