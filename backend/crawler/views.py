@@ -9,7 +9,7 @@ from rest_framework.response import Response
 
 
 class SearchView(generics.ListAPIView):
-    template_name = "crawler/index.html"
+    template_name = "index.html"
     context_object_name = "all_publications"
     queryset = Publication.objects.all()
     serializer_class = PublicationSerializer
@@ -48,3 +48,5 @@ class LecturerList(APIView):
 
     def get_queryset(self):
         return Lecturer.objects.all()
+
+
