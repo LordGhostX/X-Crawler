@@ -1,5 +1,5 @@
 """
-arachne_lite scrapes Oxford Academic search results
+oxford_academic scrapes Oxford Academic search results
 and returns a list of dictionaries
 encoded in a json file. The dictionaries contain keys -
 author, research_link, research_title, abstract
@@ -12,8 +12,6 @@ import json
 import logging
 
 from bs4 import BeautifulSoup
-
-import colorer
 
 
 formatter = '[%(asctime)s] %(levelname)s - %(message)s'
