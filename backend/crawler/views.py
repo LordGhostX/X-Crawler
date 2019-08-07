@@ -17,7 +17,6 @@ class SearchView(APIView):
     def get(self, request, format=None):
         all_publication = Publication.objects.all()
         serializer = PublicationSerializer(all_publication, many=True)
-        print(serializer.data)
         return Response(serializer.data, template_name="index.html")
 
     # def get_queryset(self):

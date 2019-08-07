@@ -9,7 +9,7 @@ class Publication(models.Model):
     pub_picture = models.ImageField(blank=True)
 
     def __str__(self):
-        return self.pub_title + self.author
+        return self.pub_title + '-' + self.author
 
 
 class Lecturer(models.Model):

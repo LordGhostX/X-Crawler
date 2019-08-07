@@ -4,23 +4,23 @@ from .models import Publication, Lecturer
 
 class PublicationSerializer(serializers.BaseSerializer):
 
-    # def to_representation(self, obj):
-    #     return {
-    #         'title': obj.pub_title,
-    #         'author': obj.author,
-    #         'summary': obj.pub_summary,
-    #         'url': obj.pub_url,
-    #         'picture': obj.pub_picture,
-    #     }
+    def to_representation(self, obj):
+        return {
+            'pub_title': obj.pub_title,
+            'author': obj.author,
+            'pub_summary': obj.pub_summary,
+            'pub_url': obj.pub_url,
+            'pub_picture': obj.pub_picture,
+        }
 
     class Meta:
         model = Publication
         fields = [
-            'title',
+            'pub_title',
             'author',
-            'summary',
-            'url',
-            'picture',
+            'pub_summary',
+            'pub_url',
+            'pub_picture',
         ]
 
 
