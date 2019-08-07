@@ -59,14 +59,14 @@
             <div class="collapse navbar-collapse" id="navbarMenu">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'crawler:home' %}">Home</a>
+                  <a class="nav-link active" href="{% url "crawler:home" %}">Home</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link active" href="{% url 'crawler:about' %}">About</a>
+                  <a class="nav-link" href="{% url "crawler:about" %}">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'crawler:contact' %}">Contact</a>
+                  <a class="nav-link" href="{% url "crawler:contact" %}">Contact</a>
                 </li>
               </ul>
 
@@ -90,7 +90,6 @@
     {#                        Total of 5 posts #}
                             <li>
                               <a href="url {{ pub.pub_url.url }}">
-                                <img src="{{ pub.pub_picture.url}}" alt="Image placeholder" class="mr-4">
                                 <div class="text">
                                   <h4>{{ pub.pub_title}}</h4>
                                   <div class="post-meta">

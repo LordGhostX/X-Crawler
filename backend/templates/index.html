@@ -3,7 +3,6 @@
 {% block title %} Home {% endblock %}
 
 {% block body %}
-    {% if all_publications %}
           <section class="site-section py-sm">
             <div class="container">
               <div class="row">
@@ -12,28 +11,30 @@
                 </div>
               </div>
               <div class="row blog-entries">
+
                 <div class="col-md-12 col-lg-8 main-content">
                   <div class="row">
 
-                     {% for pub in all_publications %}
-                         {% load static %}
+                     {% for pub in data %}
 
-                        <div class="col-md-6">
-                          <a href="{{ pub.pub_url }}" class="blog-entry element-animate" data-animate-effect="fadeIn">
-                            <img src="{% static '/images/img_5.jpg' %}" alt="Image placeholder" class="publication-image">
-                            <div class="blog-content-body">
-                              <div class="post-meta">
+                        <div class="col-md-12">
 
+                              <a href="{{ pub.pub_url.url }}" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                                  <h2>{{ pub.pub_title }}</h2>
+                                  <p>{{ pub.pub_summary }}</p>
 
-                                <span class="author mr-2"><img src="/crawler/static/images/person_1.jpg" alt="Author">{{ pub.author }}</span>&bullet;
-                                <span class="mr-2">12 Jul 2019</span>
-                              </div>
-                              <h2>{{ pub.pub_title }}</h2>
-                            </div>
-                          </a>
-                            {% endfor %}
+                                <div class="blog-content-body">
+                                  <div class="post-meta">
+
+                                    <span class="author mr-2"><img src="/crawler/static/images/person_1.jpg" alt="Author">{{ pub.author }}</span>&bullet;
+
+                                  </div>
+                                </div>
+
+                              </a>
+
                         </div>
-
+                     {% endfor %}
 
                   </div>
 
@@ -64,7 +65,4 @@
               </div>
             </div>
           </section>
-    {% else %}
-    <h3>You don't have any publications</h3>
-{% endif %}
 {% endblock %}

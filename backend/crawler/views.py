@@ -1,23 +1,29 @@
 from rest_framework.views import APIView
-from rest_framework import generics
+from django.shortcuts import render
 from .models import Lecturer, Publication
 from .serializers import PublicationSerializer, LecturerSerializer
 from rest_framework import filters
 from .pagination import PostPageNumberPagination
 from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.response import Response
+from .renderer import MyTemplateHTMLRenderer
 
 
-class SearchView(generics.ListAPIView):
-    template_name = "index.html"
-    queryset = Publication.objects.all()
-    context_object_name = "all_publications"
-    serializer_class = PublicationSerializer
-    renderer_classes = [TemplateHTMLRenderer]
+class SearchView(APIView):
+    serializer_class = PublicationSerializer(many=True)
+    renderer_classes = [MyTemplateHTMLRenderer]
     pagination_class = PostPageNumberPagination
 
-    def get_queryset(self):
-        return Publication.objects.all()
+    def get(self, request, format=None):
+        all_publication = Publication.objects.all()
+        serializer = PublicationSerializer(all_publication, many=True)
+        print(serializer.data)
+        return Response(serializer.data, template_name="index.html")
+
+    # def get_queryset(self):
+    #     serializer = PublicationSerializer
+    #     return Response(serializer.data, template_name="index.html")
+
     # with open('data.txt', "r") as text_file:
     #     text = eval(text_file.read())
     #     for research in text:
