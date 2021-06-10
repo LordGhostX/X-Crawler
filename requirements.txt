@@ -2,7 +2,7 @@ beautifulsoup4==4.8.0
 bs4==0.0.1
 certifi==2019.6.16
 chardet==3.0.4
-Django==2.2.21
+Django==2.2.24
 djangorestframework==3.11.2
 idna==2.8
 Pillow==8.2.0
