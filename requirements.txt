@@ -7,7 +7,7 @@ djangorestframework==3.11.2
 idna==2.8
 Pillow==9.3.0
 pytz==2018.7
-requests==2.22.0
+requests==2.32.2
 soupsieve==1.9.2
 sqlparse==0.3.0
 urllib3==1.26.5
